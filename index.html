@@ -5,8 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Video task</title>
     <link rel="stylesheet" href="styles/style.css" />
-    <link rel="icon" href="" type="image/x-icon" />
+    <link
+      rel="icon"
+      href="./assets/favicon/video_128.png"
+      type="image/x-icon"
+    />
     <script src="js/script.js"></script>
   </head>
-  <body></body>
+  <body>
+    <div class="wrapper">
+      <div class="video">
+        <video
+          class="video-element"
+          src="./assets/video/video.mp4"
+          autoplay
+          muted
+          loop
+        ></video>
+      </div>
+      <div class="enter" id="enter">
+        <input type="text" id="text" placeholder="Enter text" />
+        <button id="submit">Submit</button>
+      </div>
+      <div class="overlay" id="overlay"></div>
+    </div>
+  </body>
 </html>
